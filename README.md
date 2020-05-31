@@ -4,4 +4,4 @@
   
   2.项目效果展示
   
- ![image](http://github.com/Chris-z-su/SSM_upload/raw/master/src/main/webapp/images/temp/微信截图_20200531195230.png)
+ ![image](https://github.com/Chris-z-su/SSM_upload/blob/master/src/main/webapp/images/temp/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20200531195230.png)
