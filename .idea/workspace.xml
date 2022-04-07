@@ -6,9 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b9d3fcd-a9ad-4b5d-8c3c-7a9250d28c4e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-    </list>
+    <list default="true" id="6b9d3fcd-a9ad-4b5d-8c3c-7a9250d28c4e" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -545,7 +543,7 @@
       <workItem from="1590924819780" duration="2448000" />
       <workItem from="1591014015493" duration="897000" />
       <workItem from="1598788495465" duration="3469000" />
-      <workItem from="1649341101087" duration="6416000" />
+      <workItem from="1649341101087" duration="6587000" />
     </task>
     <task id="LOCAL-00001" summary="version 1.0">
       <created>1590925033925</created>
@@ -580,7 +578,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84744000" />
+    <option name="totallyTimeSpent" value="84915000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
