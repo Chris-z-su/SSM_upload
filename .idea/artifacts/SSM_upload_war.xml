@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="SSM_upload:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="SSM_upload-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="SSM_upload:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -13,6 +13,7 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.HashMap;
+import java.util.Map;
 
 @Controller
 public class UploadController {
@@ -52,20 +53,24 @@ public class UploadController {
         String webappRootUrl = scheme + "://" + serverName + ":" + serverPort + contextPath;
         String fileUrl = date.get(Calendar.YEAR) + "/" + (date.get(Calendar.MONTH) + 1) + "/" + date.get(Calendar.DAY_OF_MONTH) + "/" + newFileName;
         // 将相对路径写回（json格式）
-        JSONObject jsonObject = new JSONObject();
+//        JSONObject jsonObject = new JSONObject();
         //http://47.100.37.150:8080/upload/resource/uploads/2020/5/17/1589710957689305.png
 
+        Map<String, String> resultMap = new HashMap<String, String>();
+        resultMap.put("state", "success");
+        resultMap.put("path", webappRootUrl + "/resource/uploads/"+fileUrl);
+
         // 将图片上传到本地
-        jsonObject.put("path", webappRootUrl + "/resource/uploads/"+fileUrl);
+//        jsonObject.put("state", "success");
+//        jsonObject.put("path", webappRootUrl + "/resource/uploads/"+fileUrl);
 
         //读取文件夹下的资源
         File[] viewAll = viewAll(rootPath);
 
-
         // 设置响应数据的类型json
         response.setContentType("application/json; charset=utf-8");
         // 写回
-        response.getWriter().write(jsonObject.toString());
+        response.getWriter().write(JSONObject.toJSONString(resultMap));
     }
 
 

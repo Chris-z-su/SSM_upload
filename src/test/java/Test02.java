@@ -12,9 +12,8 @@ public class Test02 {
         //递归遍历
         showName(f,1, hashMap, null);
 
-        StringBuilder stringBuilder = new StringBuilder();
-        stringBuilder.append(1);
-
+//        StringBuilder stringBuilder = new StringBuilder();
+//        stringBuilder.append(1);
     }
 
     public static void showName(File file,int level, HashMap<String, FileDateInfo> hashMap, FileDateInfo fileDateInfo) {
@@ -23,9 +22,7 @@ public class Test02 {
         if (fileDateInfo == null){
             fileDateInfo = new FileDateInfo();
         }
-
 //        hashMap.put("", file.getName() + "/");
-
         for(File f:listFiles){
             for(int i=1;i<=level;i++){
                 System.out.print("-  ");
@@ -33,7 +30,6 @@ public class Test02 {
 
             if(f.isDirectory()){//是文件夹
                 System.out.println(f.getName());
-
                 switch (level){
                     case 1:
                         fileDateInfo.setYear(f.getName());
@@ -42,16 +38,12 @@ public class Test02 {
                     case 3:
                         fileDateInfo.setDay(f.getName());
                 }
-
-
-                hashMap.put(f.getName(), f.getName() + "/");
-                showName(f,level+1, hashMap);
+                hashMap.put(f.getName(), fileDateInfo);
+                showName(f,level+1, hashMap, fileDateInfo);
             }else{//是文件
                 System.out.println(f.getName());
-
                 fileDateInfo.setFileName(f.getName());
-
-                hashMap.put(f.getName(), f.getName() + "/");
+                hashMap.put(f.getName(), fileDateInfo);
             }
         }
 
