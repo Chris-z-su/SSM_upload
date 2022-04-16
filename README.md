@@ -6,4 +6,4 @@
 
   2.项目效果展示
 
-![](https://github.com/Chris-z-su/SSM_upload/raw/master/src/main/webapp/images/temp/play.png)
+![](https://github.com/Chris-z-su/SSM_upload/blob/master/src/main/webapp/images/temp/play.png)
